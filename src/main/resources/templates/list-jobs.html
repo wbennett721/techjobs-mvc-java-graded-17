@@ -12,7 +12,15 @@
 
   <!-- TODO #1 - Use a loop to display job results in a table. -->
 
-</div>
+<main>
+    <th:block>
+            <table class="job-listing">
+                <tr th:each="job : ${jobs}">
+                  <td th:text="${jobs}"></td>
+                </tr>
+            </table>
+    </th:block>
 
 </body>
 </html>
+</main>
